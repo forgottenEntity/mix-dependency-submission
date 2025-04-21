@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: erlef/mix-dependency-submission@v1.0.0-beta.8
+      - uses: erlef/mix-dependency-submission@v1.0.0-beta.9
 ```
 
 ## Inputs
