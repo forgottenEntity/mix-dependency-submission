@@ -2,7 +2,7 @@ if Mix.env() == :dev do
   # Helpful for testing, use Burrito binary for prod
 
   defmodule Mix.Tasks.MixDependencySubmission do
-    @shortdoc "Run mix_depdendency_submission"
+    @shortdoc "Run mix_dependency_submission"
     @moduledoc """
     #{@shortdoc}
 

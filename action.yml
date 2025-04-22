@@ -1,4 +1,4 @@
-name: "Mix Depdendency Submission"
+name: "Mix Dependency Submission"
 description: "Calculates dependencies for Mix and submits the list to the GitHub Dependency Submission API"
 author: "Erlang Ecosystem Foundation"
 branding:
