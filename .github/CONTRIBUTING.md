@@ -139,8 +139,10 @@ $ mix docs
 * Update `version` in `action.yml` / `steps` / `Verify Dependency Submission Tool Provenance`
 * `git commit -m "Release v[VERSION]"`
 * `git tag -s v[VERSION] -m v[VERSION]`
-* `mix hex.publish`
-* `git push origin main --tags`
+* If stable release:
+  * `git checkout v[MAJOR_VERSION]`
+  * `git merge main`
+* `git push origin main v[MAJOR_VERSION] --tags`
 
 ## How-To Update Erlang / Elixir
 
