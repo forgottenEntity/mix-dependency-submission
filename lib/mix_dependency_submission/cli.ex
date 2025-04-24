@@ -123,7 +123,7 @@ defmodule MixDependencySubmission.CLI do
       {:ok, Path.absname(path)}
     else
       {:error, reason} -> {:error, reason}
-      false -> {:error, "invalid path"}
+      false -> {:error, "parse_project_path: invalid path"}
     end
   end
 
@@ -132,7 +132,7 @@ defmodule MixDependencySubmission.CLI do
     if File.dir?(path) do
       {:ok, Path.absname(path)}
     else
-      {:error, "invalid path"}
+      {:error, "parse_directory: invalid path"}
     end
   end
 
