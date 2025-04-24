@@ -30,16 +30,6 @@ runs:
         tag: "v1.0.2"
         fileName: "mix_dependency_submission_${{ runner.os }}_${{ runner.arch }}"
         out-file-path: "${{ runner.temp }}"
-    - name: "Verify Dependency Submission Tool Provenance"
-      run: >-
-        gh attestation verify
-        --repo forgottenentity/mix-dependency-submission
-        --source-ref refs/tags/v1.0.2
-        "${{ runner.temp }}/mix_dependency_submission_${{ runner.os }}_${{ runner.arch }}"
-      shell: "bash"
-      working-directory: "${{ runner.temp }}"
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
     - name: "Make Tool Executable"
       run: >-
         chmod +x
